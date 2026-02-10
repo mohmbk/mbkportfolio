@@ -1,0 +1,125 @@
+.contact{
+    height: 100vh;
+    background-color: #140118;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contacttext{
+    height: 25%;
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.align{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gettext{
+    color: #0CFFFF;
+    font-size: 50px;
+}
+
+.inputdiv{
+    height: 60%;
+    width: 55%;
+    background-color: rgba(105, 82, 82, 0.203);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+    border: rgba(68, 62, 62, 0.927) solid 1px;
+}
+.inpdiv{
+    height: 13%;
+    width: 90%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.1);
+}
+
+
+.inputname{
+    height: 100%;
+    width: 45%;
+    padding-left: 10px;
+    border-radius: 8px;
+    border: rgba(177, 164, 164, 0.927) solid 1px;
+    background-color: rgba(255, 255, 255, 0.1); /* Dark grey background */
+  border: 1px solid #6f5c5c;
+  color: white;
+
+}
+
+.inputname::placeholder{
+    font-size: larger;
+}
+
+.subjectinput{
+    height: 13%;
+    width: 90%;
+    padding-left: 10px;
+    border-radius: 8px;
+    border: rgba(68, 62, 62, 0.927) solid 1px;
+    background-color: rgba(255, 255, 255, 0.1); /* Dark grey background */
+  border: 1px solid #6f5c5c;
+  color: white;
+}
+
+.subjectinput::placeholder{
+    font-size: larger;
+}
+
+.messageinput{
+    height: 30%;
+    width: 90%;
+    border-radius: 8px;
+    padding-top: 10px;
+    padding-left: 10px;
+    background-color: rgba(255, 255, 255, 0.1); /* Dark grey background */
+  border: 1px solid #6f5c5c;
+  resize: none;
+  color: white;
+}
+.messageinput::placeholder{
+    font-size: larger;
+    font-family:inherit;
+}
+
+.submitinput{
+    height: 13%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0CFFFF;
+    border-radius: 8px;
+    border: 1px solid #6f5c5c
+}
+
+.submitinput:hover{
+    transform: scale(1.06);
+    transition-duration: 0.6s;
+}
+
+.submitinput::placeholder{
+    font-size: larger
+}
+
+.h2text{
+    font-weight: 300;
+    color: white;
+}

@@ -1,0 +1,251 @@
+
+@keyframes popOut {
+  from {
+    transform: scale(0.1); 
+    opacity: 0;
+    filter: blur(12px); 
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+@keyframes slideInFromleft {
+  from {
+    /* -100vh place l'élément exactement au-dessus du haut de l'écran */
+    transform: translateX(-100vh); 
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+@keyframes slideInFromright {
+  from {
+    /* -100vh place l'élément exactement au-dessus du haut de l'écran */
+    transform: translateX(+100vh); 
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFrombottom {
+  from {
+    /* -100vh place l'élément exactement au-dessus du haut de l'écran */
+    transform: translateY(15vh); 
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+
+@keyframes typingMultiLine {
+  from {
+    max-height: 0;
+  }
+  to {
+    /* Mets une valeur assez grande pour couvrir tout ton texte */
+    max-height: 100%; 
+  }
+}
+
+
+
+
+.home{
+    height: 100vh;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url("/cover3.jpg"); */
+    background-position: center;
+    background-size: cover;
+}
+
+.maindiv{
+    height: 55%;
+    width: 40%;
+    /* background-color: brown; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    
+}
+
+.bigtextdiv{
+    /* background-color: blue; */
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: popOut 1.2s ease-out forwards;
+   
+
+}
+
+.bigtext{
+    font-size: 100px;
+}
+
+.descdiv{
+    /* background-color: blueviolet; */
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.description{
+    font-family:'Times New Roman', Times, serif;
+    
+    text-align: center;
+    /* animation:
+    typing 3s steps(74) forwards,
+    blink 0.7s infinite; */
+    
+}
+
+.slideleft{
+  animation: slideInFromleft 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+
+
+  
+.typing {
+  /* On autorise le retour à la ligne */
+  white-space: normal !important; 
+  overflow: hidden;
+  display: block;
+  
+  /* L'animation de dévoilement */
+  /* On anime la hauteur pour découvrir les lignes une par une */
+  animation: typingMultiLine 4s steps(40) forwards !important;
+  
+  /* Optionnel : un dégradé qui suit pour simuler le curseur */
+  mask-image: linear-gradient(to right, black 100%, transparent 100%);
+}
+
+
+
+
+
+.btndiv{
+    height: 25%;
+    width: 100%;
+    /* background-color: chartreuse; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    animation: slideInFromright 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    
+}
+
+.btn{
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 20px;
+    font-size: 17px;
+    position: relative;
+  overflow: hidden; 
+  z-index: 1; 
+  display: inline-block; /* Pour être sûr que les dimensions sont lues */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0; /* Commence à zéro à gauche */
+  height: 100%;
+  background-color: #3b0346; /* La couleur qui va remplir */
+  transition: width 1s ease-in-out;
+  z-index: -1; /* Se place entre le fond noir et le texte */
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  background-color: transparent !important;
+  color: white;
+}
+
+/* On déclenche le remplissage au hover */
+.btn:hover::before {
+  width: 100%; /* La bouteille se remplit */
+}
+
+
+
+.icondiv{
+  height: 15%;
+  width: 100%;
+  animation: slideInFrombottom 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  /* background-color: aqua; */
+    
+}
+
+
+.circle{
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  background-color:transparent;
+  opacity: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.circle:hover{
+  transform: scale(1.1);
+  transition-duration: 0.5s;
+}
+
+
+.img{
+  height: 60%;
+  width: 60%;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 100%;
+}
+
+
+.anker{
+  height: 50%;
+  width: 30%;
+}
+

@@ -1,0 +1,108 @@
+
+@keyframes slideInFrombottom {
+  from {
+    /* -100vh place l'élément exactement au-dessus du haut de l'écran */
+    transform: translateY(15vh); 
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+
+
+
+.skillsection{
+    background-color: #140118; 
+    
+    
+}
+
+.skillstextdiv{
+    text-align: center;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+
+}
+
+.skilltext{
+    color: #0CFFFF;
+    font-size: 40px;
+}
+
+
+.skillssec{
+    height: 100vh;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.skill{
+    height: 13%;
+    width: 80%;
+     background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: rgba(68, 62, 62, 0.927) solid 1px;
+}
+
+.pourcentage{
+    height: 40%;
+    width: 97%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    color: white;
+}
+
+
+.rempdiv{
+    height: 20%;
+    width: 97%;
+    /* background-color: yellow; */
+    border-radius: 20px;
+}
+
+.remplissage{
+    height: 100%;
+    width: 100%;
+    background-color: #0CFFFF;
+    border-radius: 20px;
+}
+
+
+.remplissage1{
+    height: 100%;
+    width: 70%;
+    background-color: #0CFFFF;
+    border-radius: 20px;
+}
+
+.remplissage2{
+    height: 100%;
+    width: 90%;
+    background-color: #0CFFFF;
+    border-radius: 20px;
+}
+
+
+.show{
+    animation: slideInFrombottom 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}

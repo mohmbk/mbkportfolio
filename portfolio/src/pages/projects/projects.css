@@ -1,0 +1,104 @@
+.projectsection{
+    background-color: red;
+}
+
+.myproject{
+    height: 30vh;
+    background-color: #140118 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projecttext{
+    color: #0CFFFF;
+    font-size: 60px;
+}
+
+.projectdiv{
+    height: 80vh;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color:#140118 ;
+}
+
+
+.projet{
+    height: 100%;
+    width: 100%;
+    /* background-color: rgb(0, 218, 44); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 25px;
+    overflow: hidden;
+    border: rgba(68, 62, 62, 0.927) solid 1px;
+    
+}
+
+.projetimg{
+    height: 55%;
+    width: 100%;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.1); 
+
+}
+
+.projet:hover{
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+
+
+.descriptionclass{
+    height: 30%;
+    margin-left: 10px;
+    margin-right: 10px;
+    /* background-color: red; */
+    text-align: left;
+    color: white;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-weight: 550;
+    
+    
+}
+
+.skillsused{
+    height: 10%;
+    width: 100%;
+    /* background-color: rgb(140, 0, 255); */
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 20px;
+    padding-left: 20px;
+}
+
+.divskill{
+    height: 90%;
+    width: 20%;
+    background-color: yellow; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-bottom: 5%;
+    
+}
+
+
+
+.ankerproject{
+    height: 75%;
+    width:25% ;
+}
