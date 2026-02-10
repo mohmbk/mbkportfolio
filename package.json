@@ -1,4 +1,11 @@
 {
+  "name": "mbkportfolio-root",
+  "private": true,
+  "scripts": {
+    "build": "cd portfolio && npm ci && npm run build",
+    "start": "cd portfolio && npm run preview",
+    "vercel-build": "npm run build"
+  },
   "dependencies": {
     "ogl": "^1.0.11",
     "react-router-dom": "^7.13.0"
