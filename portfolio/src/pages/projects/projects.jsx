@@ -10,7 +10,7 @@ function Projects() {
       description :"A digital recreation of the classic card game built with Java, focusing on robust object-oriented architecture.",
       skill1 :"JAVA",
       skill2 :"OOP",
-      
+      href : "https://github.com/mohmbk/mbkportfolio"
     },
 
     {
@@ -18,6 +18,7 @@ function Projects() {
       description :"user-friendly platform that showcases a curated range of high-quality sofas through vibrant imagery and interactive customization tools. It simplifies the buying process with clear categories, detailed material specs, and a seamless checkout designed for a premium shopping experience. ",
       skill1 :"HTML",
       skill2 :"CSS",
+      href : "https://github.com/mohmbk/sofa-fourniture"
     },
 
     {
@@ -25,6 +26,7 @@ function Projects() {
       description :"user-friendly platform that showcases a curated range of high-quality sofas through vibrant imagery and interactive customization tools. It simplifies the buying process with clear categories, detailed material specs, and a seamless checkout designed for a premium shopping experience.",
       skill1 :"HTML",
       skill2 :"CSS",
+      href : "https://github.com/mohmbk/nike-project-2"
     },
   ]
 
@@ -38,7 +40,7 @@ function Projects() {
         <section className={`projectdiv ${projectIsVisible ? 'show' : ''}`} ref={projectRef}>
           {
             projects.map((p) => (
-              <a href="" className="ankerproject">
+              <a href={p.href} className="ankerproject">
                 <div className="projet">
 
                   <img src={p.img} alt="" className='projetimg'/>

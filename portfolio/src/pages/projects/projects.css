@@ -37,6 +37,7 @@
     border-radius: 25px;
     overflow: hidden;
     border: rgba(68, 62, 62, 0.927) solid 1px;
+    text-decoration: none;
     
 }
 
@@ -65,8 +66,7 @@
     justify-content: left;
     align-items: center;
     font-weight: 550;
-    
-    
+    text-decoration: none;    
 }
 
 .skillsused{
