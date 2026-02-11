@@ -9,9 +9,9 @@
     align-items: center;
     padding-left: 20px;
     position: fixed;
+    -webkit-backdrop-filter: blur(10px) !important;
     backdrop-filter: blur(10px); 
-  -webkit-backdrop-filter: blur(10px);
-  z-index: 1000;
+    z-index: 1000;
     
 }
 
