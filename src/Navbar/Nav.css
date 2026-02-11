@@ -12,7 +12,9 @@
     backdrop-filter: blur(10px); 
   -webkit-backdrop-filter: blur(10px);
   z-index: 1000;
-    
+    isolation: isolate; 
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
 }
 
 
