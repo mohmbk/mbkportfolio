@@ -102,3 +102,38 @@
     height: 75%;
     width:25% ;
 }
+
+
+@media (max-width: 1300px) {
+    .descriptionclass{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1020px) {
+    .descriptionclass{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 900px) {
+    .descriptionclass{
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 740px) {
+    .projectdiv{
+        height: 170vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+
+    .ankerproject{
+        height: 30%;width:45%;
+    }
+}

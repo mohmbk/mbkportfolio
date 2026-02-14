@@ -95,7 +95,7 @@
     justify-content: center;
     align-items: center;
     animation: popOut 1.2s ease-out forwards;
-   
+   /* background-color: red; */
 
 }
 
@@ -249,3 +249,39 @@
   width: 30%;
 }
 
+
+@media (max-width: 1203px) {
+    .bigtext{
+      font-size:80px;
+      padding-top: 30px;
+    }
+}
+
+@media (max-width : 970px) {
+    .bigtext{
+      font-size:60px;
+      margin-top: 40px;
+    }
+}
+
+@media (max-width: 740px) {
+    .bigtext{
+      font-size:50px;
+    }
+}
+
+@media (max-width: 610px) {
+    .bigtext{
+      font-size:60px;
+      margin-top: 40px;
+    }
+
+    .anker{
+      width: 40%;
+    }
+
+    .maindiv{
+      height: 60%;
+      width: 60%;
+    }
+}

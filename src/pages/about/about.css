@@ -122,6 +122,7 @@
     justify-content: center;
     align-items: center;
     color: #0CFFFF;
+    text-align: center;
 }
 
 .skilldiv:hover{
@@ -146,4 +147,82 @@
 .moh{
     text-align: center;
     color: #0CFFFF;
+}
+
+
+@media (max-width: 1203px) {
+    .h2{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .container{
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    .textcontainer{
+        flex-direction: row;
+        width: 80%;
+        gap: 50px;
+    }
+
+    .skillssection{
+        width: 70%;
+        height: 90%;
+    }
+
+    .skilldiv{
+        text-align: center;
+        width:45%;
+    }
+
+    .h2{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 750px) {
+    .h2{
+        font-size: 14px;
+    }
+    .abouttextdiv{
+        width: 60%;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .about{
+        height: 150vh;
+    }
+    .textcontainer{
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 0px;
+        align-items: center;
+        text-align: center;
+        
+        height: 150%;
+    }
+
+    .skillssection{
+        height: 170px;
+        width: 75%;
+        
+    }
+    .h2{
+        
+        font-size: 17px;
+    }
+    /* .skilldiv{
+        height: 32%;
+    } */
+
+    .imgdiv{
+        height: 80%;
+        width: 70%;
+    }
 }

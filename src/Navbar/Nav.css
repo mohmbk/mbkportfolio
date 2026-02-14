@@ -67,5 +67,24 @@ li{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: aqua; */
+    /* background-color: aqua;  */
+}
+
+
+@media (max-width: 1000px) {
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 12vh;
+    }
+
+    .bar{
+        width: 80%;
+    }
+
+    li{
+        height: 70%;
+    }
 }
