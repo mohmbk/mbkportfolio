@@ -7,7 +7,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding-left: 20px;
+    /* padding-left: 20px; */
     position: fixed;
     -webkit-backdrop-filter: blur(10px) ;
     backdrop-filter: blur(10px); 
@@ -24,7 +24,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-     /* margin-right: 20px; */
+     margin-right: 20px; 
 } 
 
 
@@ -78,13 +78,22 @@ li{
         justify-content: space-around;
         align-items: center;
         height: 12vh;
+        text-align: center;
     }
 
     .bar{
-        width: 80%;
+        width: 90%;
+        text-align: center;
+        /* margin-right: 40px; */
     }
 
     li{
         height: 70%;
     }
+h1{
+    text-align: center;
+
+}
+    
+    
 }

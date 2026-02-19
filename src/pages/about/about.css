@@ -200,7 +200,7 @@
     }
     .textcontainer{
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
         gap: 0px;
         align-items: center;
         text-align: center;
@@ -224,5 +224,12 @@
     .imgdiv{
         height: 80%;
         width: 70%;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .textdiv{
+        width: 100%;
     }
 }

@@ -81,21 +81,21 @@
     /* background-color: brown; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     position: absolute;
-    
+   
 }
 
 .bigtextdiv{
     /* background-color: blue; */
-    height: 40%;
+    height: 30%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     animation: popOut 1.2s ease-out forwards;
-   /* background-color: red; */
+    background-color: red;
 
 }
 
@@ -250,6 +250,12 @@
 }
 
 
+@media (max-width: 1060px) {
+    .maindiv{
+      width: 60%;
+    }
+}
+
 @media (max-width: 1203px) {
     .bigtext{
       font-size:80px;
@@ -257,22 +263,17 @@
     }
 }
 
-@media (max-width : 970px) {
-    .bigtext{
-      font-size:60px;
-      margin-top: 40px;
-    }
-}
-
-@media (max-width: 740px) {
-    .bigtext{
-      font-size:50px;
+@media (max-width: 720px) {
+    .maindiv{
+      width: 80%;
+      
+      
     }
 }
 
 @media (max-width: 610px) {
     .bigtext{
-      font-size:60px;
+      font-size:80px;
       margin-top: 40px;
     }
 
@@ -282,6 +283,45 @@
 
     .maindiv{
       height: 60%;
-      width: 60%;
+      width: 85%;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .bigtext{
+       font-size:60px;
+      /* margin-top: 40px; */
+    }
+
+    .bigtextdiv{
+      /* background-color: red; */
+      height: 20%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 20px;
+    }
+
+    
+
+    .maindiv{
+      height: 60%;
+      /* width: 55%; */
+      background-color: aqua;
+
+    }
+
+    .btndiv{
+      height: 15%;
+    }
+
+    .anker{
+      height: 70%;
+    }
+
+
+    .descdiv{
+      height: 25%;
     }
 }
